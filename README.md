@@ -9,5 +9,9 @@ cordova plugin add 本插件路径
 cordova plugin add cordova-custom-config
  ```
 应用项目的config.xml文件添加一句：
- ```<preference name="android-manifest/application/activity/@android:theme" value="@style/WelcomeStyle" /> ```
+ ```
+ <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']" xmlns:android="http://schemas.android.com/apk/res/android">
+     <activity android:theme="@style/WelcomeStyle" />
+ </edit-config>
+ ```
 这样就大功告成了！
