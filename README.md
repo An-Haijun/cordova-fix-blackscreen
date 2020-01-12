@@ -9,7 +9,7 @@ cordova plugin add 本插件路径
 cordova plugin add cordova-custom-config
  ```
 应用项目的config.xml文件添加一句：
- ```
+ ```android
  <edit-config file="app/src/main/AndroidManifest.xml" mode="merge" target="/manifest/application/activity[@android:name='MainActivity']" xmlns:android="http://schemas.android.com/apk/res/android">
      <activity android:theme="@style/WelcomeStyle" />
  </edit-config>
